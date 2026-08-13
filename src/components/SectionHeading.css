@@ -1,0 +1,57 @@
+.section-heading {
+  margin-bottom: 3rem;
+}
+
+.section-heading.centered {
+  text-align: center;
+}
+
+.section-heading-eyebrow {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--brand-orange);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.section-heading-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--brand-black);
+  margin-bottom: 1rem;
+}
+
+.section-heading.orange .section-heading-title {
+  color: var(--brand-orange);
+}
+
+.section-heading-description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--brand-gray);
+  max-width: 600px;
+}
+
+.section-heading.centered .section-heading-description {
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-heading {
+    margin-bottom: 2rem;
+  }
+
+  .section-heading-eyebrow {
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-heading-description {
+    font-size: 1rem;
+  }
+}

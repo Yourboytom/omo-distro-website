@@ -1,0 +1,238 @@
+.work-with-us {
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.work-with-us-hero {
+  padding: 6rem 0;
+  text-align: center;
+  background: var(--brand-light-gray);
+}
+
+.work-with-us-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--brand-black);
+  margin-bottom: 1.5rem;
+}
+
+.work-with-us-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--brand-gray);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Services Section */
+.work-with-us-services {
+  padding: 6rem 0;
+}
+
+.work-with-us-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.work-with-us-service {
+  padding: 2.5rem;
+  border-left: 4px solid var(--brand-orange);
+  background: var(--brand-white);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-with-us-service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.work-with-us-service-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--brand-orange);
+  line-height: 1;
+  margin-bottom: 1rem;
+  opacity: 0.4;
+}
+
+.work-with-us-service-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--brand-black);
+}
+
+.work-with-us-service-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--brand-gray);
+}
+
+/* Contact Section */
+.work-with-us-contact {
+  background: var(--brand-orange);
+  color: var(--brand-white);
+  padding: 6rem 0;
+}
+
+.work-with-us-contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.work-with-us-contact-content {
+  padding-right: 2rem;
+}
+
+.work-with-us-contact-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--brand-white);
+  margin-bottom: 1.5rem;
+}
+
+.work-with-us-contact-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.work-with-us-contact-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 4px;
+  backdrop-filter: blur(10px);
+}
+
+/* CEO CTA Section */
+.work-with-us-ceo-cta {
+  padding: 6rem 0;
+  text-align: center;
+  background: var(--brand-black);
+  color: var(--brand-white);
+}
+
+.work-with-us-ceo-cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.work-with-us-ceo-cta-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--brand-white);
+  margin-bottom: 1.5rem;
+}
+
+.work-with-us-ceo-cta-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--brand-gray);
+  margin-bottom: 2.5rem;
+}
+
+.work-with-us-ceo-cta-button {
+  background: var(--brand-orange);
+  color: var(--brand-white);
+  border: none;
+}
+
+.work-with-us-ceo-cta-button:hover {
+  background: #e05700;
+  color: var(--brand-white);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .work-with-us-services-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .work-with-us-contact-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .work-with-us-contact-content {
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-with-us {
+    padding-top: 70px;
+  }
+
+  .work-with-us-hero {
+    padding: 4rem 0;
+  }
+
+  .work-with-us-title {
+    font-size: 2rem;
+  }
+
+  .work-with-us-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .work-with-us-services {
+    padding: 4rem 0;
+  }
+
+  .work-with-us-service {
+    padding: 2rem;
+  }
+
+  .work-with-us-service-number {
+    font-size: 2.5rem;
+  }
+
+  .work-with-us-service-title {
+    font-size: 1.5rem;
+  }
+
+  .work-with-us-service-description {
+    font-size: 1rem;
+  }
+
+  .work-with-us-contact {
+    padding: 4rem 0;
+  }
+
+  .work-with-us-contact-title {
+    font-size: 1.75rem;
+  }
+
+  .work-with-us-contact-subtitle {
+    font-size: 1rem;
+  }
+
+  .work-with-us-contact-form {
+    padding: 1.5rem;
+  }
+
+  .work-with-us-ceo-cta {
+    padding: 4rem 0;
+  }
+
+  .work-with-us-ceo-cta-title {
+    font-size: 1.75rem;
+  }
+
+  .work-with-us-ceo-cta-subtitle {
+    font-size: 1.125rem;
+  }
+}

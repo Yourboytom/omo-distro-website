@@ -1,0 +1,237 @@
+.who-we-are {
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.who-we-are-hero {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.who-we-are-eyebrow {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--brand-orange);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.who-we-are-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--brand-black);
+  margin: 0;
+}
+
+/* Image Section */
+.who-we-are-image-section {
+  padding: 2rem 0;
+}
+
+/* Story Section */
+.who-we-are-story {
+  padding: 4rem 0;
+  background: var(--brand-light-gray);
+}
+
+.who-we-are-story-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--brand-black);
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.who-we-are-story-text {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--brand-gray);
+  max-width: 700px;
+}
+
+/* Pillars Section */
+.who-we-are-pillars {
+  padding: 6rem 0;
+}
+
+.who-we-are-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.who-we-are-pillar {
+  padding: 2rem;
+  border-top: 3px solid var(--brand-orange);
+  transition: transform 0.3s ease;
+}
+
+.who-we-are-pillar:hover {
+  transform: translateY(-5px);
+}
+
+.who-we-are-pillar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--brand-black);
+}
+
+.who-we-are-pillar-text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--brand-gray);
+}
+
+/* Statement Section */
+.who-we-are-statement {
+  background: var(--brand-orange);
+  color: var(--brand-white);
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.who-we-are-statement-text {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--brand-white);
+  margin: 0;
+}
+
+/* Values Section */
+.who-we-are-values {
+  padding: 6rem 0;
+}
+
+.who-we-are-values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.who-we-are-value {
+  padding: 2.5rem;
+  background: var(--brand-black);
+  color: var(--brand-white);
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.who-we-are-value:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.who-we-are-value-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--brand-orange);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.who-we-are-value-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--brand-white);
+}
+
+.who-we-are-value-text {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .who-we-are-pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .who-we-are-values-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .who-we-are {
+    padding-top: 70px;
+  }
+
+  .who-we-are-hero {
+    padding: 3rem 0;
+  }
+
+  .who-we-are-title {
+    font-size: 2rem;
+  }
+
+  .who-we-are-story {
+    padding: 3rem 0;
+  }
+
+  .who-we-are-story-title {
+    font-size: 1.75rem;
+  }
+
+  .who-we-are-story-text {
+    font-size: 1.125rem;
+  }
+
+  .who-we-are-pillars {
+    padding: 4rem 0;
+  }
+
+  .who-we-are-pillar {
+    padding: 1.5rem;
+  }
+
+  .who-we-are-pillar-title {
+    font-size: 1.25rem;
+  }
+
+  .who-we-are-pillar-text {
+    font-size: 1rem;
+  }
+
+  .who-we-are-statement {
+    padding: 4rem 0;
+  }
+
+  .who-we-are-statement-text {
+    font-size: 1.75rem;
+  }
+
+  .who-we-are-values {
+    padding: 4rem 0;
+  }
+
+  .who-we-are-value {
+    padding: 2rem;
+  }
+
+  .who-we-are-value-number {
+    font-size: 2.5rem;
+  }
+
+  .who-we-are-value-title {
+    font-size: 1.25rem;
+  }
+
+  .who-we-are-value-text {
+    font-size: 1rem;
+  }
+}
