@@ -69,11 +69,26 @@
 .who-we-are-pillar {
   padding: 2rem;
   border-top: 3px solid var(--brand-orange);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-top-width 0.3s ease;
+  cursor: pointer;
 }
 
 .who-we-are-pillar:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-top-width: 5px;
+}
+
+.who-we-are-pillar:hover .who-we-are-pillar-title {
+  color: var(--brand-orange);
+}
+
+.who-we-are-pillar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--brand-black);
+  transition: color 0.3s ease;
 }
 
 .who-we-are-pillar-title {
@@ -123,12 +138,29 @@
   background: var(--brand-black);
   color: var(--brand-white);
   border-radius: 4px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.3s ease;
+  cursor: pointer;
 }
 
 .who-we-are-value:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  background: #1a1a1a;
+}
+
+.who-we-are-value:hover .who-we-are-value-number {
+  transform: scale(1.1);
+  color: var(--brand-orange);
+}
+
+.who-we-are-value-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--brand-orange);
+  line-height: 1;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
 }
 
 .who-we-are-value-number {
@@ -145,6 +177,11 @@
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--brand-white);
+  transition: color 0.3s ease;
+}
+
+.who-we-are-value:hover .who-we-are-value-title {
+  color: var(--brand-orange);
 }
 
 .who-we-are-value-text {

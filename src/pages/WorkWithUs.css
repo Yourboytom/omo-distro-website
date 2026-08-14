@@ -42,12 +42,19 @@
   padding: 2.5rem;
   border-left: 4px solid var(--brand-orange);
   background: var(--brand-white);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-left-width 0.3s ease;
+  cursor: pointer;
 }
 
 .work-with-us-service:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-left-width: 6px;
+}
+
+.work-with-us-service:hover .work-with-us-service-number {
+  opacity: 0.6;
+  transform: scale(1.1);
 }
 
 .work-with-us-service-number {
@@ -58,6 +65,18 @@
   line-height: 1;
   margin-bottom: 1rem;
   opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.work-with-us-service-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--brand-orange);
+  line-height: 1;
+  margin-bottom: 1rem;
+  opacity: 0.4;
+  transition: all 0.3s ease;
 }
 
 .work-with-us-service-title {
@@ -65,12 +84,22 @@
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--brand-black);
+  transition: color 0.3s ease;
+}
+
+.work-with-us-service:hover .work-with-us-service-title {
+  color: var(--brand-orange);
 }
 
 .work-with-us-service-description {
   font-size: 1.125rem;
   line-height: 1.6;
   color: var(--brand-gray);
+  transition: color 0.3s ease;
+}
+
+.work-with-us-service:hover .work-with-us-service-description {
+  color: var(--brand-black);
 }
 
 /* Contact Section */

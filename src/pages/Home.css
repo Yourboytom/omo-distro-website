@@ -72,6 +72,12 @@
   height: auto;
   border-radius: 4px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.home-hero-image-wrapper:hover .home-hero-img {
+  transform: scale(1.05);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
 }
 
 /* Statement Section */
@@ -113,12 +119,19 @@
 .home-service {
   padding: 2rem;
   border-left: 3px solid var(--brand-orange);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.3s ease;
+  cursor: pointer;
 }
 
 .home-service:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-left-width: 5px;
+}
+
+.home-service:hover .home-service-number {
+  opacity: 0.6;
+  transform: scale(1.1);
 }
 
 .home-service-number {
@@ -129,6 +142,7 @@
   line-height: 1;
   margin-bottom: 1rem;
   opacity: 0.3;
+  transition: all 0.3s ease;
 }
 
 .home-service-title {
@@ -142,6 +156,11 @@
   font-size: 1.125rem;
   line-height: 1.6;
   color: var(--brand-gray);
+  transition: color 0.3s ease;
+}
+
+.home-service:hover .home-service-description {
+  color: var(--brand-black);
 }
 
 /* CTA Section */
@@ -164,6 +183,11 @@
   font-weight: 700;
   color: var(--brand-white);
   margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.home-cta-container:hover .home-cta-title {
+  transform: scale(1.05);
 }
 
 /* Responsive Design */

@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom'
 import SectionHeading from '../components/SectionHeading'
 import Button from '../components/Button'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import './TheAfricanStory.css'
 
 const TheAfricanStory = () => {
+  const [heroRef, heroVisible] = useScrollAnimation({ threshold: 0.1 })
+  const [featuredRef, featuredVisible] = useScrollAnimation({ threshold: 0.2 })
+  const [storiesRef, storiesVisible] = useScrollAnimation({ threshold: 0.1 })
+  const [categoriesRef, categoriesVisible] = useScrollAnimation({ threshold: 0.1 })
+
   const stories = [
     {
       id: 1,
@@ -60,23 +66,23 @@ const TheAfricanStory = () => {
   return (
     <div className="the-african-story">
       {/* Hero Section */}
-      <section className="the-african-story-hero">
+      <section className="the-african-story-hero" ref={heroRef}>
         <div className="container">
-          <h1 className="the-african-story-title">
+          <h1 className={`the-african-story-title ${heroVisible ? 'animate-slide-up' : ''}`}>
             THE AFRICAN
             <br />
             STORY.
           </h1>
-          <p className="the-african-story-subtitle">
+          <p className={`the-african-story-subtitle ${heroVisible ? 'animate-slide-up stagger-1' : ''}`}>
             People. Culture. Creativity. Ideas. The conversations shaping Africa and the world around it.
           </p>
         </div>
       </section>
 
       {/* Featured Story */}
-      <section className="the-african-story-featured">
+      <section className="the-african-story-featured" ref={featuredRef}>
         <div className="container">
-          <div className="the-african-story-featured-card">
+          <div className={`the-african-story-featured-card ${featuredVisible ? 'animate-slide-up' : ''}`}>
             <div className="the-african-story-featured-image">
               <img
                 src={stories[0].image}
@@ -103,7 +109,7 @@ const TheAfricanStory = () => {
       </section>
 
       {/* Stories Grid */}
-      <section className="the-african-stories-grid">
+      <section className="the-african-stories-grid" ref={storiesRef}>
         <div className="container">
           <SectionHeading
             eyebrow="LATEST STORIES"
@@ -112,8 +118,12 @@ const TheAfricanStory = () => {
           />
           
           <div className="the-african-stories">
-            {stories.slice(1).map((story) => (
-              <article key={story.id} className="the-african-story-card">
+            {stories.slice(1).map((story, index) => (
+              <article 
+                key={story.id} 
+                className={`the-african-story-card ${storiesVisible ? 'animate-slide-up' : ''}`}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
                 <div className="the-african-story-card-image">
                   <img
                     src={story.image}
@@ -142,14 +152,15 @@ const TheAfricanStory = () => {
       </section>
 
       {/* Categories Section */}
-      <section className="the-african-story-categories">
+      <section className="the-african-story-categories" ref={categoriesRef}>
         <div className="container">
           <div className="the-african-story-categories-grid">
-            {categories.map((category) => (
+            {categories.map((category, index) => (
               <Link
                 key={category}
                 to="#"
-                className="the-african-story-category-card"
+                className={`the-african-story-category-card ${categoriesVisible ? 'animate-slide-up' : ''}`}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <span className="the-african-story-category-name">
                   {category}
