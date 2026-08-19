@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="container footer-container">
         <div className="footer-brand">
           <h3 className="footer-title">OMO DISTRO LIMITED</h3>
-          <p className="footer-tagline">IDEAS. PEOPLE. STORIES.</p>
+          <p className="footer-tagline">PRODUCTS. PEOPLE. STORIES.</p>
         </div>
 
         <div className="footer-content">

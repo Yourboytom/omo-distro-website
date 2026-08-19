@@ -33,7 +33,7 @@
 
 .work-with-us-services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   margin-top: 4rem;
 }
@@ -162,6 +162,7 @@
   letter-spacing: -0.02em;
   color: var(--brand-white);
   margin-bottom: 1.5rem;
+  white-space: pre-line;
 }
 
 .work-with-us-ceo-cta-subtitle {
@@ -185,7 +186,7 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .work-with-us-services-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 
@@ -219,6 +220,11 @@
 
   .work-with-us-services {
     padding: 4rem 0;
+  }
+
+  .work-with-us-services-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .work-with-us-service {

@@ -38,10 +38,10 @@ const WhoWeAre = () => {
       <section className="who-we-are-story" ref={storyRef}>
         <div className="container">
           <h2 className={`who-we-are-story-title ${storyVisible ? 'animate-slide-up' : ''}`}>
-            EVERY MOVEMENT STARTS WITH AN IDEA.
+            Omo Distro is a family-run company, named after our esteemed mum, Omosigho Alli-Shobande.
           </h2>
           <p className={`who-we-are-story-text ${storyVisible ? 'animate-slide-up stagger-1' : ''}`}>
-            Omo Distro began with a simple belief: African creativity deserves spaces where it can grow, connect and travel beyond borders. We're building those spaces.
+            For nearly two decades, Mum has built a food catering business. Dad, Gani Alli-Shobande, has built a landmark career in the maritime industry. We, the children - Daisi, Dami, Tope - and a growing team bring the worlds of food, agriculture, and trade together. Building a new generation venture rooted in oil palm resources and the African story.
           </p>
         </div>
       </section>
@@ -53,21 +53,21 @@ const WhoWeAre = () => {
             <div className={`who-we-are-pillar ${pillarsVisible ? 'animate-slide-up' : ''}`}>
               <h3 className="who-we-are-pillar-title">WHERE WE COME FROM</h3>
               <p className="who-we-are-pillar-text">
-                Rooted in African creativity and culture, we draw inspiration from the continent's rich heritage and dynamic present.
+                Lagos. Roaming the local shores that host oil palms and relative resources.
               </p>
             </div>
 
             <div className={`who-we-are-pillar ${pillarsVisible ? 'animate-slide-up stagger-1' : ''}`}>
               <h3 className="who-we-are-pillar-title">WHAT WE BELIEVE</h3>
               <p className="who-we-are-pillar-text">
-                We believe in the power of ideas, the importance of authentic storytelling, and the potential of African creativity on the global stage.
+                In the power of information. And the impact of proper representation.
               </p>
             </div>
 
             <div className={`who-we-are-pillar ${pillarsVisible ? 'animate-slide-up stagger-2' : ''}`}>
               <h3 className="who-we-are-pillar-title">WHERE WE'RE GOING</h3>
               <p className="who-we-are-pillar-text">
-                We're building for what's next — creating platforms, connections and opportunities that will shape the future of African creative expression.
+                Building for what's next. Creating the platform, connection and opportunity that shape the future of African identity.
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ const WhoWeAre = () => {
       <section className="who-we-are-values" ref={valuesRef}>
         <div className="container">
           <SectionHeading
-            eyebrow="OUR VALUES"
+            eyebrow="WHAT GUIDES US"
             title="What guides us"
             centered
           />
@@ -99,7 +99,7 @@ const WhoWeAre = () => {
               <span className="who-we-are-value-number">01</span>
               <h3 className="who-we-are-value-title">CULTURE</h3>
               <p className="who-we-are-value-text">
-                We honor and celebrate African culture in all its forms.
+                We honor Africa in all its forms.
               </p>
             </div>
 
@@ -107,7 +107,7 @@ const WhoWeAre = () => {
               <span className="who-we-are-value-number">02</span>
               <h3 className="who-we-are-value-title">CREATIVITY</h3>
               <p className="who-we-are-value-text">
-                We believe in the transformative power of creative expression.
+                We believe in the power of expression.
               </p>
             </div>
 
@@ -115,7 +115,7 @@ const WhoWeAre = () => {
               <span className="who-we-are-value-number">03</span>
               <h3 className="who-we-are-value-title">COMMUNITY</h3>
               <p className="who-we-are-value-text">
-                We're stronger together, building connections that last.
+                We build stronger together.
               </p>
             </div>
 
@@ -123,7 +123,7 @@ const WhoWeAre = () => {
               <span className="who-we-are-value-number">04</span>
               <h3 className="who-we-are-value-title">IMPACT</h3>
               <p className="who-we-are-value-text">
-                We measure success by the positive change we create.
+                We build for what lasts.
               </p>
             </div>
           </div>

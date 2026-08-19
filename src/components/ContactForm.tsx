@@ -108,7 +108,7 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
       </div>
 
       <div className="contact-form-group">
-        <label htmlFor="project">What are you looking to build? *</label>
+        <label htmlFor="project">What are you looking to get? *</label>
         <input
           type="text"
           id="project"

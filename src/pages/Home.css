@@ -190,6 +190,13 @@
   transform: scale(1.05);
 }
 
+.home-cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .home-hero-container {

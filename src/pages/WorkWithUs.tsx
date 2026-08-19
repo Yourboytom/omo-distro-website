@@ -16,12 +16,10 @@ const WorkWithUs = () => {
       <section className="work-with-us-hero" ref={heroRef}>
         <div className="container">
           <h1 className={`work-with-us-title ${heroVisible ? 'animate-slide-up' : ''}`}>
-            LET'S BUILD
-            <br />
-            SOMETHING.
+            LET'S TALK.
           </h1>
           <p className={`work-with-us-subtitle ${heroVisible ? 'animate-slide-up stagger-1' : ''}`}>
-            Have an idea, brand, project or story that needs to move? Let's talk.
+            Need CPO? Building a palm oil network? Have a story worth telling? Talk With Us.
           </p>
         </div>
       </section>
@@ -30,41 +28,33 @@ const WorkWithUs = () => {
       <section className="work-with-us-services" ref={servicesRef}>
         <div className="container">
           <SectionHeading
-            eyebrow="SERVICES"
-            title="How we can help"
+            eyebrow="WHAT WE MOVE"
+            title="What we move"
             centered
           />
           
           <div className="work-with-us-services-grid">
             <div className={`work-with-us-service ${servicesVisible ? 'animate-slide-up' : ''}`}>
               <span className="work-with-us-service-number">01</span>
-              <h3 className="work-with-us-service-title">CREATIVE DIRECTION</h3>
+              <h3 className="work-with-us-service-title">CPO</h3>
               <p className="work-with-us-service-description">
-                We help shape ideas from concept to execution.
+                Nigerian crude palm oil for industrial supply.
               </p>
             </div>
 
             <div className={`work-with-us-service ${servicesVisible ? 'animate-slide-up stagger-1' : ''}`}>
               <span className="work-with-us-service-number">02</span>
-              <h3 className="work-with-us-service-title">BRAND & DIGITAL</h3>
+              <h3 className="work-with-us-service-title">PALM OIL</h3>
               <p className="work-with-us-service-description">
-                We create identities and digital experiences that people remember.
+                Palm oil for retail networks. From source to shelf.
               </p>
             </div>
 
             <div className={`work-with-us-service ${servicesVisible ? 'animate-slide-up stagger-2' : ''}`}>
               <span className="work-with-us-service-number">03</span>
-              <h3 className="work-with-us-service-title">CONTENT & STORYTELLING</h3>
+              <h3 className="work-with-us-service-title">STORIES</h3>
               <p className="work-with-us-service-description">
-                We turn ideas, people and culture into stories worth sharing.
-              </p>
-            </div>
-
-            <div className={`work-with-us-service ${servicesVisible ? 'animate-slide-up stagger-3' : ''}`}>
-              <span className="work-with-us-service-number">04</span>
-              <h3 className="work-with-us-service-title">STRATEGY & CONSULTING</h3>
-              <p className="work-with-us-service-description">
-                We help brands find their voice, position and next move.
+                People, brands and stories worth putting in front of the world.
               </p>
             </div>
           </div>
@@ -82,7 +72,7 @@ const WorkWithUs = () => {
                 YOU'RE BUILDING.
               </h2>
               <p className="work-with-us-contact-subtitle">
-                Share your idea with us and let's explore what we can create together.
+                Tell us what you have in mind. We'll take it from there.
               </p>
             </div>
             <div className={`work-with-us-contact-form ${contactVisible ? 'animate-slide-up stagger-1' : ''}`}>
@@ -97,14 +87,12 @@ const WorkWithUs = () => {
         <div className="container">
           <div className="work-with-us-ceo-cta-content">
             <h2 className={`work-with-us-ceo-cta-title ${ceoVisible ? 'animate-slide-up' : ''}`}>
-              SOMETIMES
-              <br />
-              ALL YOU NEED
+              SOMETIMES ALL YOU NEED
               <br />
               IS ONE CONVERSATION.
             </h2>
             <p className={`work-with-us-ceo-cta-subtitle ${ceoVisible ? 'animate-slide-up stagger-1' : ''}`}>
-              Book a one-on-one conversation with the CEO and let's explore what your idea could become.
+              Talk to us about oil palm, partnerships, stories or what comes next.
             </p>
             <div className={ceoVisible ? 'animate-slide-up stagger-2' : ''}>
               <Button 
@@ -113,7 +101,7 @@ const WorkWithUs = () => {
                 size="lg"
                 className="work-with-us-ceo-cta-button"
               >
-                BOOK A ONE-ON-ONE WITH THE CEO →
+                BOOK A ONE-ON-ONE →
               </Button>
             </div>
           </div>

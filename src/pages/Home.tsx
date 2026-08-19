@@ -21,7 +21,7 @@ const Home = () => {
               <span className="text-orange">IS AFRICAN.</span>
             </h1>
             <p className="home-hero-subtitle">
-              Omo Distro is a creative platform connecting ideas, people and stories from Africa with the world.
+              We're moving the African story, her oil palm, and more.
             </p>
             <div className="home-hero-ctas">
               <Button href="/work-with-us" variant="primary" size="lg">
@@ -37,7 +37,7 @@ const Home = () => {
               <div className="home-hero-orange-accent"></div>
               <img
                 src="https://images.unsplash.com/photo-1578926288207-a90a5366759d?w=800&h=1000&fit=crop"
-                alt="African creative photography"
+                alt="African oil palm resources"
                 className="home-hero-img"
               />
             </div>
@@ -56,7 +56,7 @@ const Home = () => {
             <span className="text-orange">THEY ARE HEARD.</span>
           </h2>
           <p className={`home-statement-subtitle ${statementVisible ? 'animate-slide-up stagger-1' : ''}`}>
-            We believe in the power of African creativity and the stories that shape our continent and the world.
+            We believe in championing the people who feed our continent and the world.
           </p>
         </div>
       </section>
@@ -66,32 +66,32 @@ const Home = () => {
         <div className="container">
           <SectionHeading
             eyebrow="WHAT WE DO"
-            title="We transform ideas into experiences"
+            title="ONE RESOURCE. MANY POSSIBILITIES."
             centered
           />
           
           <div className="home-services">
             <div className={`home-service ${servicesVisible ? 'animate-slide-up' : ''}`}>
               <span className="home-service-number">01</span>
-              <h3 className="home-service-title">IDEAS</h3>
+              <h3 className="home-service-title">CRUDE PALM OIL</h3>
               <p className="home-service-description">
-                We transform ambitious ideas into meaningful creative experiences.
+                Nigerian crude palm oil: Traced, Sourced, Vetted For Industrial Supply.
               </p>
             </div>
 
             <div className={`home-service ${servicesVisible ? 'animate-slide-up stagger-1' : ''}`}>
               <span className="home-service-number">02</span>
-              <h3 className="home-service-title">STORIES</h3>
+              <h3 className="home-service-title">PALM OIL FOR RETAIL NETWORKS</h3>
               <p className="home-service-description">
-                We create stories that connect African culture with global audiences.
+                Palm oil for the everyday African household. From source to shelf.
               </p>
             </div>
 
             <div className={`home-service ${servicesVisible ? 'animate-slide-up stagger-2' : ''}`}>
               <span className="home-service-number">03</span>
-              <h3 className="home-service-title">CONNECTIONS</h3>
+              <h3 className="home-service-title">THE AFRICAN STORY</h3>
               <p className="home-service-description">
-                We bring people, brands and opportunities together.
+                We find the stories behind what moves Africa. And tell them.
               </p>
             </div>
           </div>
@@ -101,9 +101,12 @@ const Home = () => {
       {/* CTA Section */}
       <section className="home-cta" ref={ctaRef}>
         <div className="container home-cta-container">
-          <h2 className={`home-cta-title ${ctaVisible ? 'animate-slide-up' : ''}`}>HAVE AN IDEA?</h2>
-          <div className={ctaVisible ? 'animate-slide-up stagger-1' : ''}>
+          <h2 className={`home-cta-title ${ctaVisible ? 'animate-slide-up' : ''}`}>ONE RESOURCE. ONE GROWING NETWORK.</h2>
+          <div className={`home-cta-buttons ${ctaVisible ? 'animate-slide-up stagger-1' : ''}`}>
             <Button href="/work-with-us" variant="primary" size="lg">
+              NEED CPO / PALM OIL →
+            </Button>
+            <Button href="/work-with-us" variant="secondary" size="lg">
               LET'S TALK →
             </Button>
           </div>

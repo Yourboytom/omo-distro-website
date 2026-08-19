@@ -228,6 +228,85 @@
   transition: transform 0.3s ease;
 }
 
+/* Story Placeholder */
+.the-african-story-placeholder {
+  background: var(--brand-black);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.the-african-story-placeholder:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.the-african-story-video-placeholder {
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--brand-light-gray);
+  color: var(--brand-gray);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Statement Section */
+.the-african-story-statement {
+  background: var(--brand-black);
+  color: var(--brand-white);
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.the-african-story-statement-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.the-african-story-statement-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--brand-white);
+  margin-bottom: 2rem;
+  white-space: pre-line;
+}
+
+.the-african-story-statement-text {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--brand-gray);
+  margin-bottom: 3rem;
+}
+
+.the-african-story-statement-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Footer Tagline */
+.the-african-story-footer {
+  background: var(--brand-orange);
+  color: var(--brand-white);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.the-african-story-footer-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
 .the-african-story-category-name {
   font-size: 1.125rem;
   font-weight: 600;
@@ -237,17 +316,13 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .the-african-story-featured-card {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
   .the-african-stories {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .the-african-story-categories-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .the-african-story-statement-ctas {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 
@@ -261,7 +336,7 @@
   }
 
   .the-african-story-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .the-african-story-subtitle {
@@ -270,18 +345,6 @@
 
   .the-african-story-featured {
     padding: 4rem 0;
-  }
-
-  .the-african-story-featured-content {
-    padding: 1.5rem;
-  }
-
-  .the-african-story-featured-title {
-    font-size: 1.5rem;
-  }
-
-  .the-african-story-featured-description {
-    font-size: 1rem;
   }
 
   .the-african-stories-grid {
@@ -293,31 +356,23 @@
     gap: 1.5rem;
   }
 
-  .the-african-story-card-content {
-    padding: 1.25rem;
-  }
-
-  .the-african-story-card-title {
-    font-size: 1.125rem;
-  }
-
-  .the-african-story-card-description {
-    font-size: 0.875rem;
-  }
-
-  .the-african-story-categories {
+  .the-african-story-statement {
     padding: 4rem 0;
   }
 
-  .the-african-story-categories-grid {
-    grid-template-columns: 1fr;
+  .the-african-story-statement-title {
+    font-size: 1.75rem;
   }
 
-  .the-african-story-category-card {
-    padding: 1.5rem;
+  .the-african-story-statement-text {
+    font-size: 1.125rem;
   }
 
-  .the-african-story-category-name {
-    font-size: 1rem;
+  .the-african-story-footer {
+    padding: 3rem 0;
+  }
+
+  .the-african-story-footer-text {
+    font-size: 1.125rem;
   }
 }

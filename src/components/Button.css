@@ -40,6 +40,17 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Secondary button on orange background */
+.bg-orange .button-secondary {
+  background: var(--brand-white);
+  color: var(--brand-orange);
+}
+
+.bg-orange .button-secondary:hover:not(:disabled) {
+  background: var(--brand-light-gray);
+  color: var(--brand-orange);
+}
+
 .button-outline {
   background: transparent;
   color: var(--brand-orange);
