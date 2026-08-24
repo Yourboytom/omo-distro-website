@@ -36,7 +36,7 @@ const Home = () => {
             <div className="home-hero-image-wrapper">
               <div className="home-hero-orange-accent"></div>
               <img
-                src="https://images.unsplash.com/photo-1578926288207-a90a5366759d?w=800&h=1000&fit=crop"
+                src="/images/hero-image..png"
                 alt="African oil palm resources"
                 className="home-hero-img"
               />

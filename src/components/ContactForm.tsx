@@ -33,7 +33,7 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = 'Email is invalid'
     }
-    if (!formData.project.trim()) newErrors.project = 'Project description is required'
+    if (!formData.project.trim()) newErrors.project = 'This field is required'
     if (!formData.message.trim()) newErrors.message = 'Message is required'
 
     setErrors(newErrors)
@@ -43,6 +43,20 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (validate()) {
+      // Create email body
+      const emailBody = `
+Name: ${formData.name}
+Email: ${formData.email}
+Company: ${formData.company || 'Not provided'}
+What are you looking to get: ${formData.project}
+Message: ${formData.message}
+      `.trim()
+
+      // Open email client with pre-filled information
+      const mailtoLink = `mailto:allidamilola22@gmail.com?subject=New Inquiry from ${formData.name}&body=${encodeURIComponent(emailBody)}`
+      window.location.href = mailtoLink
+
+      // Show success message
       setIsSubmitted(true)
       onSubmit?.(formData)
     }
@@ -59,8 +73,8 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
   if (isSubmitted) {
     return (
       <div className="contact-form-success">
-        <h3>THANK YOU FOR REACHING OUT</h3>
-        <p>We've received your message and will get back to you soon.</p>
+        <h3>THANK YOU</h3>
+        <p>Your email client should have opened with your message pre-filled. Please send it to complete your inquiry.</p>
         <button onClick={() => setIsSubmitted(false)} className="contact-form-reset">
           Send another message
         </button>

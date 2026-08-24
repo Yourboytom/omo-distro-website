@@ -37,9 +37,9 @@ const WhoWeAre = () => {
       {/* Story Section */}
       <section className="who-we-are-story" ref={storyRef}>
         <div className="container">
-          <h2 className={`who-we-are-story-title ${storyVisible ? 'animate-slide-up' : ''}`}>
+          <p className={`who-we-are-story-text ${storyVisible ? 'animate-slide-up' : ''}`}>
             Omo Distro is a family-run company, named after our esteemed mum, Omosigho Alli-Shobande.
-          </h2>
+          </p>
           <p className={`who-we-are-story-text ${storyVisible ? 'animate-slide-up stagger-1' : ''}`}>
             For nearly two decades, Mum has built a food catering business. Dad, Gani Alli-Shobande, has built a landmark career in the maritime industry. We, the children - Daisi, Dami, Tope - and a growing team bring the worlds of food, agriculture, and trade together. Building a new generation venture rooted in oil palm resources and the African story.
           </p>

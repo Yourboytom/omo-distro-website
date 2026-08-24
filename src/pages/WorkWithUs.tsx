@@ -96,7 +96,7 @@ const WorkWithUs = () => {
             </p>
             <div className={ceoVisible ? 'animate-slide-up stagger-2' : ''}>
               <Button 
-                href="#" 
+                href="mailto:allidamilola22@gmail.com?subject=I want to book a one-on-one&body=I want to book a one-on-one conversation to discuss oil palm, partnerships, stories or what comes next."
                 variant="primary" 
                 size="lg"
                 className="work-with-us-ceo-cta-button"

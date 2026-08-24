@@ -9,8 +9,8 @@ const Footer = () => {
   ]
 
   const socialLinks = [
-    { name: 'Instagram', href: '#' },
-    { name: 'TikTok', href: '#' },
+    { name: 'Instagram', href: 'https://www.instagram.com/omodistro' },
+    { name: 'TikTok', href: 'https://www.tiktok.com/@omodistro' },
     { name: 'LinkedIn', href: '#' },
     { name: 'YouTube', href: '#' },
   ]
@@ -46,6 +46,8 @@ const Footer = () => {
                   href={social.href}
                   className="footer-social-link"
                   aria-label={social.name}
+                  target={social.href !== '#' ? '_blank' : undefined}
+                  rel={social.href !== '#' ? 'noopener noreferrer' : undefined}
                 >
                   {social.name}
                 </a>

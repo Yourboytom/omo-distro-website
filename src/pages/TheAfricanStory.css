@@ -99,94 +99,124 @@
   margin-top: 4rem;
 }
 
-.the-african-story-card {
-  background: var(--brand-white);
-  border-radius: 4px;
+/* Instagram Reels Marquee */
+.the-african-reels-marquee {
+  margin-top: 4rem;
   overflow: hidden;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.the-african-reels-track-marquee {
+  display: flex;
+  gap: 1.5rem;
+  animation: marquee 40s ease-in-out infinite alternate;
+  width: max-content;
+  min-width: 250%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.the-african-reel-card-marquee {
+  flex-shrink: 0;
+  width: 350px;
+  transition: transform 0.3s ease;
   cursor: pointer;
 }
 
-.the-african-story-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+.the-african-reel-card-marquee:hover {
+  transform: scale(1.05);
 }
 
-.the-african-story-card:hover .the-african-story-card-title {
-  color: var(--brand-orange);
+.the-african-reels-marquee:hover .the-african-reels-track-marquee {
+  animation-play-state: paused;
 }
 
-.the-african-story-card-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.3;
-  letter-spacing: -0.01em;
-  color: var(--brand-black);
-  margin-bottom: 0.75rem;
-  transition: color 0.3s ease;
-}
-
-.the-african-story-card-image {
-  aspect-ratio: 3/2;
+.the-african-reel-placeholder-marquee {
+  aspect-ratio: 9/16;
+  background: linear-gradient(135deg, var(--brand-black) 0%, #1a1a1a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   overflow: hidden;
+  border-radius: 8px;
+  max-height: 450px;
 }
 
-.the-african-story-card-img {
+.the-african-reel-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  z-index: 1;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.the-african-story-card:hover .the-african-story-card-img {
+.the-african-reel-card-marquee:hover .the-african-reel-thumbnail {
   transform: scale(1.1);
+  filter: brightness(0.8);
 }
 
-.the-african-story-card-content {
-  padding: 1.5rem;
+.the-african-reel-content-marquee {
+  text-align: center;
+  color: var(--brand-white);
+  padding: 1rem;
+  z-index: 2;
+  position: relative;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  margin-top: auto;
+  border-radius: 0 0 8px 8px;
 }
 
-.the-african-story-card-category {
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  color: var(--brand-orange);
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-}
-
-.the-african-story-card-title {
-  font-size: 1.25rem;
+.the-african-reel-title-marquee {
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 1.3;
-  letter-spacing: -0.01em;
-  color: var(--brand-black);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
+  color: var(--brand-white);
 }
 
-.the-african-story-card-description {
-  font-size: 0.9375rem;
-  line-height: 1.6;
+.the-african-reel-description-marquee {
+  font-size: 0.75rem;
   color: var(--brand-gray);
   margin-bottom: 1rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
-.the-african-story-card-link {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--brand-orange);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: color 0.2s ease;
+.the-african-reel-play-marquee {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(245, 97, 0, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 3;
 }
 
-.the-african-story-card-link:hover {
-  color: #e05700;
+.the-african-reel-play-marquee:hover {
+  background: var(--brand-orange);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.the-african-reel-play-icon-marquee {
+  font-size: 1.25rem;
+  color: var(--brand-white);
+  margin-left: 2px;
 }
 
 /* Categories Section */
@@ -307,17 +337,28 @@
   margin: 0;
 }
 
-.the-african-story-category-name {
-  font-size: 1.125rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+/* Responsive Design */
+@media (min-width: 1400px) {
+  .the-african-reel-card-marquee {
+    width: 400px;
+  }
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
-  .the-african-stories {
-    grid-template-columns: repeat(2, 1fr);
+  .the-african-reel-card-marquee {
+    width: 280px;
+  }
+
+  .the-african-reel-placeholder-marquee {
+    max-height: 400px;
+  }
+
+  .the-african-reel-title-marquee {
+    font-size: 0.875rem;
+  }
+
+  .the-african-reel-description-marquee {
+    font-size: 0.625rem;
   }
 
   .the-african-story-statement-ctas {
@@ -351,9 +392,34 @@
     padding: 4rem 0;
   }
 
-  .the-african-stories {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+  .the-african-reel-card-marquee {
+    width: 220px;
+  }
+
+  .the-african-reel-placeholder-marquee {
+    aspect-ratio: 9/16;
+    max-height: 350px;
+  }
+
+  .the-african-reel-title-marquee {
+    font-size: 0.75rem;
+  }
+
+  .the-african-reel-description-marquee {
+    font-size: 0.625rem;
+  }
+
+  .the-african-reel-play-marquee {
+    width: 40px;
+    height: 40px;
+  }
+
+  .the-african-reel-play-icon-marquee {
+    font-size: 1rem;
+  }
+
+  .the-african-reels-track-marquee {
+    gap: 1rem;
   }
 
   .the-african-story-statement {
