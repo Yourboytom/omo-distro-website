@@ -28,8 +28,8 @@ const WhoWeAre = () => {
       <section className="who-we-are-image-section">
         <div className="container">
           <EditorialImage
-            src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1200&h=800&fit=crop"
-            alt="Omo Distro team and creative work"
+            src="/images/who-we-are-image.jpeg"
+            alt="Omo Distro family portrait"
           />
         </div>
       </section>
@@ -38,10 +38,16 @@ const WhoWeAre = () => {
       <section className="who-we-are-story" ref={storyRef}>
         <div className="container">
           <p className={`who-we-are-story-text ${storyVisible ? 'animate-slide-up' : ''}`}>
-            Omo Distro is a family-run company, named after our esteemed mum, Omosigho Alli-Shobande.
+            Omo Distro is a family-run company, named after our esteemed mum, Mrs. Omosigho.
           </p>
           <p className={`who-we-are-story-text ${storyVisible ? 'animate-slide-up stagger-1' : ''}`}>
-            For nearly two decades, Mum has built a food catering business. Dad, Gani Alli-Shobande, has built a landmark career in the maritime industry. We, the children - Daisi, Dami, Tope - and a growing team bring the worlds of food, agriculture, and trade together. Building a new generation venture rooted in oil palm resources and the African story.
+            For nearly two decades, both of our parents have shown excellence in business.
+          </p>
+          <p className={`who-we-are-story-text ${storyVisible ? 'animate-slide-up stagger-2' : ''}`}>
+            Food catering for mom and maritime for dad.
+          </p>
+          <p className={`who-we-are-story-text ${storyVisible ? 'animate-slide-up stagger-3' : ''}`}>
+            Daisi, Dami and Tope are pushing this cartel for a good cause, one that benefits the African mind.
           </p>
         </div>
       </section>

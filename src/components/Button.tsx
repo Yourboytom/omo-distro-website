@@ -28,6 +28,13 @@ const Button = ({
   const classes = `${baseClasses} ${variantClasses} ${sizeClasses} ${className}`.trim()
 
   if (href) {
+    if (href.startsWith('mailto:')) {
+      return (
+        <a href={href} className={classes}>
+          {children}
+        </a>
+      )
+    }
     return (
       <Link to={href} className={classes}>
         {children}

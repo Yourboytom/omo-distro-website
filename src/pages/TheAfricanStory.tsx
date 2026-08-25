@@ -84,7 +84,11 @@ const TheAfricanStory = () => {
               <Button href="/work-with-us" variant="primary" size="lg">
                 SHARE YOUR STORY →
               </Button>
-              <Button href="/work-with-us" variant="secondary" size="lg">
+              <Button 
+                href="mailto:allidamilola22@gmail.com?subject=I want to book a one-on-one&body=I want to book a one-on-one conversation to discuss oil palm, partnerships, stories or what comes next."
+                variant="secondary" 
+                size="lg"
+              >
                 ONE-ON-ONE →
               </Button>
             </div>
@@ -136,7 +140,7 @@ const TheAfricanStory = () => {
       <section className="the-african-story-footer">
         <div className="container">
           <p className="the-african-story-footer-text">
-            PEOPLE. PLACES. POSSIBILITIES.
+            still going
           </p>
         </div>
       </section>
