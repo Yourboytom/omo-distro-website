@@ -104,14 +104,14 @@ const Home = () => {
           <h2 className={`home-cta-title ${ctaVisible ? 'animate-slide-up' : ''}`}>ONE RESOURCE. ONE GROWING NETWORK.</h2>
           <div className={`home-cta-buttons ${ctaVisible ? 'animate-slide-up stagger-1' : ''}`}>
             <Button
-              href="mailto:allidamilola22@gmail.com?subject=Let's talk CPO and palm oil&body=I'm interested in discussing CPO and palm oil opportunities with Omo Distro."
+              href="mailto:sales@omo-distro.com?subject=Let's talk CPO and palm oil&body=I'm interested in discussing CPO and palm oil opportunities with Omo Distro."
               variant="primary"
               size="lg"
             >
               NEED CPO / PALM OIL →
             </Button>
             <Button
-              href="mailto:allidamilola22@gmail.com?subject=I want to book a one-on-one&body=I want to book a one-on-one conversation to discuss oil palm, partnerships, stories or what comes next."
+              href="mailto:sales@omo-distro.com?subject=I want to book a one-on-one&body=I want to book a one-on-one conversation to discuss oil palm, partnerships, stories or what comes next."
               variant="secondary"
               size="lg"
             >

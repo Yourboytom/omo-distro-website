@@ -11,6 +11,7 @@ const Footer = () => {
   const socialLinks = [
     { name: 'Instagram', href: 'https://www.instagram.com/omodistro' },
     { name: 'TikTok', href: 'https://www.tiktok.com/@omodistro' },
+    { name: 'Email', href: 'mailto:sales@omo-distro.com' },
     { name: 'LinkedIn', href: '#' },
     { name: 'YouTube', href: '#' },
   ]
@@ -46,8 +47,8 @@ const Footer = () => {
                   href={social.href}
                   className="footer-social-link"
                   aria-label={social.name}
-                  target={social.href !== '#' ? '_blank' : undefined}
-                  rel={social.href !== '#' ? 'noopener noreferrer' : undefined}
+                  target={social.href === 'mailto:sales@omo-distro.com' ? undefined : (social.href !== '#' ? '_blank' : undefined)}
+                  rel={social.href === 'mailto:sales@omo-distro.com' ? undefined : (social.href !== '#' ? 'noopener noreferrer' : undefined)}
                 >
                   {social.name}
                 </a>

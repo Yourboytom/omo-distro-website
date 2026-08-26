@@ -85,7 +85,7 @@ const TheAfricanStory = () => {
                 SHARE YOUR STORY →
               </Button>
               <Button 
-                href="mailto:allidamilola22@gmail.com?subject=I want to book a one-on-one&body=I want to book a one-on-one conversation to discuss oil palm, partnerships, stories or what comes next."
+                href="mailto:sales@omo-distro.com?subject=I want to book a one-on-one&body=I want to book a one-on-one conversation to discuss oil palm, partnerships, stories or what comes next."
                 variant="secondary" 
                 size="lg"
               >

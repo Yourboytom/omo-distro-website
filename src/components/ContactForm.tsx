@@ -53,7 +53,7 @@ Message: ${formData.message}
       `.trim()
 
       // Open email client with pre-filled information
-      const mailtoLink = `mailto:allidamilola22@gmail.com?subject=New Inquiry from ${formData.name}&body=${encodeURIComponent(emailBody)}`
+      const mailtoLink = `mailto:sales@omo-distro.com?subject=New Inquiry from ${formData.name}&body=${encodeURIComponent(emailBody)}`
       window.location.href = mailtoLink
 
       // Show success message

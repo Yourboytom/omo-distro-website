@@ -80,6 +80,12 @@
   justify-content: center;
   min-width: 40px;
   height: 40px;
+  text-decoration: none;
+}
+
+.footer-social-link[href^="mailto:"] {
+  min-width: auto;
+  padding: 0.5rem 1rem;
 }
 
 .footer-social-link:hover {
