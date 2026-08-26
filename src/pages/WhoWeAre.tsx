@@ -28,9 +28,10 @@ const WhoWeAre = () => {
       <section className="who-we-are-image-section">
         <div className="container">
           <EditorialImage
-            src="/images/who-we-are-image.jpeg"
-            alt="Omo Distro family portrait"
+            src="/images/founder-image.jpeg"
+            alt="Founder"
           />
+          <p className="who-we-are-image-label">Founder</p>
         </div>
       </section>
 
@@ -38,16 +39,13 @@ const WhoWeAre = () => {
       <section className="who-we-are-story" ref={storyRef}>
         <div className="container">
           <p className={`who-we-are-story-text ${storyVisible ? 'animate-slide-up' : ''}`}>
-            Omo Distro is a family-run company, named after our esteemed mum, Mrs. Omosigho.
+            OMO Distro is an African trade and distribution company rooted in a family legacy of business.
           </p>
           <p className={`who-we-are-story-text ${storyVisible ? 'animate-slide-up stagger-1' : ''}`}>
-            For nearly two decades, both of our parents have shown excellence in business.
+            Named after our mother, Mrs. Omosigho, OMO Distro carries forward nearly two decades of entrepreneurial experience — from food catering to maritime business.
           </p>
           <p className={`who-we-are-story-text ${storyVisible ? 'animate-slide-up stagger-2' : ''}`}>
-            Food catering for mom and maritime for dad.
-          </p>
-          <p className={`who-we-are-story-text ${storyVisible ? 'animate-slide-up stagger-3' : ''}`}>
-            Daisi, Dami and Tope are pushing this cartel for a good cause, one that benefits the African mind.
+            Today, We are building on that foundation with a shared ambition: to create a system that connects African products, people and opportunity.
           </p>
         </div>
       </section>

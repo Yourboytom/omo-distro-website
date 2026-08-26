@@ -102,7 +102,7 @@ const TheAfricanStory = () => {
           <SectionHeading
             eyebrow="THE PEOPLE BEHIND THE PRODUCT"
             title="Every resource has a human story behind it."
-            description="8 stories of farmers, traders, builders, families, brands, communities, and more."
+            description="Stories of farmers, traders, builders, families, brands, communities, and more."
             centered
           />
           

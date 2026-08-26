@@ -32,6 +32,21 @@
   padding: 2rem 0;
 }
 
+.who-we-are-image-section .editorial-image {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.who-we-are-image-label {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--brand-gray);
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
 /* Story Section */
 .who-we-are-story {
   padding: 4rem 0;
